@@ -139,4 +139,10 @@ while x < 5:
 ```
 
 
-
+## 免費佈署APP網站 Heroku
+[註冊Heroku帳號](https://signup.heroku.com/login)
+First name：名字  
+Last name：姓氏  
+Email Address：信箱  
+Role：職業  
+Primary Development Language：主要開發語言  
