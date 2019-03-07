@@ -138,14 +138,138 @@ while x < 5:
 # 結果 x 等於 5
 ```
 
+## 創建Line Bot  
+1. 使用line帳號登入  
+
+[進入Line 控制台](https://developers.line.me/console/)  
+
+2. 創建提供者  
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line0.jpg)  
+
+3. 填入提供者名稱  
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line1.jpg)  
+
+4. 創建提供者  
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line2.jpg)  
+
+5. 新增一個channel  
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line3.jpg)  
+
+6. 填入資訊  
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line4.jpg)  
+
+7. 同意條款  
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line5.jpg)  
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line6.jpg)  
+
+## 架設一的簡單的機器人  
+
+1. (下載範例程式)[https://github.com/adgj5472/Heroku-Linebot-Sample/archive/master.zip]  
+
+2. [進入Line 控制台](https://developers.line.me/console/) 選擇創建的channel  
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line7.jpg)  
+
+3. 開啟 webhook
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line8.jpg)  
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line9.jpg)  
+
+4. 關閉預設罐頭回覆訊息  
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line10.jpg)  
+
+5. 產生 Channel access token  
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line11.jpg)  
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line12.jpg)  
+
+6. 取得 Channel access token
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line13.jpg)  
+
+7. 取得 Channel secret
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line14.jpg)  
+
+8. 使用編輯器開啟範例程式碼資料夾內的 app.py,把剛剛取得的 channel secret 和 channel access token 填入
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/line15.jpg)  
+
 
 ## 免費佈署APP網站 Heroku
+### 註冊及新增 Heroku App
 1. [註冊Heroku帳號](https://signup.heroku.com/login)  
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/heroku0.jpg)  
+
 First name：名字  
 Last name：姓氏  
 Email Address：信箱  
 Role：職業  
 Primary Development Language：主要開發語言  
 
-2. 登入後新增新App ,點選 New -> Create New App
-![](https://github.com/adgj5472/Python-Note/blob/master/img/heroku1.jpg)
+2. 登入後新增新App ,點選 New -> Create New App  
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/heroku1.jpg)  
+
+3. 設定 App 名稱  
+
+region 選擇 United States  
+
+![](https://github.com/adgj5472/Python-Note/blob/master/img/heroku1.jpg)  
+
+### 將程式推到 Heroku 上  
+1. 下載並安裝  
+
+* [Heroku CLI](https://cli-assets.heroku.com/heroku-x64.exe)  
+
+* [Git](https://github.com/git-for-windows/git/releases/download/v2.21.0.windows.1/Git-2.21.0-64-bit.exe)  
+
+2. 開啟cmd  
+搜尋cmd並開啟  
+![](https://github.com/adgj5472/Python-Note/blob/master/img/heroku3.jpg)  
+
+3. 使用終端或命令行應用程序登錄到 Heroku  
+
+``` bash
+$ heroku login  
+```
+
+4. 初始化 git  
+
+``` bash
+$ git config --global user.name 你的名字  
+$ git config --global user.email 你的信箱  
+```
+
+**注意：git init 僅第一次使用時要輸入**  
+
+``` bash
+$ git init
+```
+
+6. 用 git 將資料夾與 heroku 連接  
+
+**注意：{HEROKU_APP_NAME} 是剛剛上面新增的 Heroku App名稱**  
+
+``` bash
+$ heroku git:remote -a {HEROKU_APP_NAME}
+```
+
+7. 輸入以下指令，將程式碼推上 Heroku，如果有跳出錯誤請重新輸入  
+
+**每當需要更新 Bot 時，請重新輸入下面指令**  
+
+``` bash
+$ git add .
+$ git commit -m "這邊填註解(簡單的說一下這次做了些什麼改動)"
+$ git push -f heroku master
+```
+
