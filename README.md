@@ -1,5 +1,15 @@
 # Python-Note
 
+## ToDo
+* python 基礎
+  * def
+  * list
+  * dict
+  
+* line API 介紹  
+
+
+
 ## 安裝
 基本上一直下一步就好了  
 [python3.7.2](https://www.python.org/ftp/python/3.7.2/python-3.7.2.exe)  
