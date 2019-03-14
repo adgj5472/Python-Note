@@ -1,11 +1,11 @@
 # Python-Note
 
 ## ToDo
-* python 基礎
-  * def
-  * import
-  * list
-  * dict
+* [Python 語法基礎](https://github.com/adgj5472/Python-Note#python-語法基礎)
+  * [def](https://github.com/adgj5472/Python-Note#def)
+  * [import](https://github.com/adgj5472/Python-Note#import)
+  * [list](https://github.com/adgj5472/Python-Note#list)
+  * [dict](https://github.com/adgj5472/Python-Note#dict)
   
 * line API 介紹  
 
@@ -31,19 +31,19 @@
 | not | or | pass | print | raise |
 | return | try | while | with | yield |
 
-**指定變數的語法：**
+### 指定變數的語法：
 
 ``` python
 x = 20  # 代表x等於20,等於不是數學內相等的意思,而是指定,左右不能互換
 ```
 
-**使用變數：**
+### 使用變數：
 ``` python
 x = 10
 y = x * 40    # 結果 y 等於400
 ```
 
-**基本運算**
+### 基本運算
 
 | 二元運算子 | 用法 | 說明 |
 | :------| ------: | :------: |
@@ -62,7 +62,7 @@ print(21 % 2)   # 1     21/2 的餘數為 1，所以結果為 1
 print(3 ** 5)   # 243   3 的 5 次方  
 ```
 
-**比較運算子**
+### 比較運算子
 
 | 關係運算子 | 用法 | 傳回true的條件 |
 | :------| ------: | :------: |
@@ -90,7 +90,7 @@ print('word' == 'word')   # true
 print('word' != 'world')  # true
 ```
 
-**邏輯運算子**
+### 邏輯運算子
 
 | 邏輯運算子 | 用法 | 傳回true的條件 |
 | :------| ------: | :------: |
@@ -107,7 +107,7 @@ print(not True)        # false
 print(not False)       # true
 ```
 
-**if-else 陳述句**
+### if-else 陳述句
 
 ``` python
 x=1
@@ -120,7 +120,7 @@ else:
 # 結果會走else 所以 x 等於 1
 ```
 
-**迴圈**
+### 迴圈
 
 迴圈有兩種for及while  
 
@@ -148,6 +148,11 @@ while x < 5:
 # while會跑5次 0<5 1<5 2<5 3<5 4<5 
 # 結果 x 等於 5
 ```
+### def(函式)
+### import
+### list
+### dict
+
 
 ## 創建Line Bot  
 1. 使用line帳號登入  
