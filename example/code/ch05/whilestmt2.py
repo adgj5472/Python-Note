@@ -1,0 +1,7 @@
+# whie stmt
+i = 1
+while True:
+    print(str(i))
+    i = i + 1
+    if i > 5:
+        break
